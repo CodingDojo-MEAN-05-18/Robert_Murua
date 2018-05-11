@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="utf-8"/>
+
+        <title>James Consulting</title>
+
+        <script>
+            console.log(' * * * CHALLENGE 1 * * *');            
+            let students = 
+            [
+                {name: 'Remy', cohort: 'Jan'},
+                {name: 'Genevieve', cohort: 'March'},
+                {name: 'Chuck', cohort: 'Jan'},
+                {name: 'Osmund', cohort: 'June'},
+                {name: 'Nikki', cohort: 'June'},
+                {name: 'Boris', cohort: 'June'}
+            ];
+    
+            
+            
+            function printObject(object)
+            {
+                for(var x = 0; x < object.length; x++ )
+                {
+                    console.log('Name: ' + object[x].name + ", Cohort: " + object[x].cohort);
+                };
+            };
+            
+            printObject(students);
+            console.log('');
+            console.log(' * * * CHALLENGE 2 * * *');
+            let users = 
+            {
+                employees: [
+                        {'first_name':  'Miguel', 'last_name' : 'Jones'},
+                        {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+                        {'first_name' : 'Nora', 'last_name' : 'Lu'},
+                        {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+                    ],
+                managers: [
+                        {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+                        {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+                    ]
+            };
+            
+            
+            function Users(users)
+            {
+             
+                console.log('EMPLOYEES')
+                for (var x = 0; x < users.employees.length; x++)
+                {
+                    var person = users.employees[x];
+                    console.log(x+1 + ' - ' + person.last_name + ', ' + person.first_name + ' - ' + (person.first_name.length + person.last_name.length)); //' - ' + (fn_length + ln_length)
+                };
+                
+                console.log('MANAGERS')
+                for (var x = 0; x < users.managers.length; x++)
+                {
+                    var person = users.managers[x];
+                    console.log(x+1 + ' - ' + person.last_name + ', ' + person.first_name + ' - ' + (person.first_name.length + person.last_name.length)); //' - ' + (fn_length + ln_length)
+                };
+
+            };
+            
+            
+            Users(users);
+
+
+        </script>   
+    </head>
+    <body></body>
+</HTML>
